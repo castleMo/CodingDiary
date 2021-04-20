@@ -208,8 +208,8 @@ ex) [![구글 로고](https://www.google.com/images/branding/googlelogo/2x/googl
 ```
 
 1. 목록1
-    2. 목록2
-        3. 목록3
+2. 목록2
+    3. 목록3
 
 + 목록A
     + 목록B
