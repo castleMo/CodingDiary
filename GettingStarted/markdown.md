@@ -190,10 +190,6 @@ ex) [![구글 로고](https://www.google.com/images/branding/googlelogo/2x/googl
 
 ### 9. 목록
 ```
-1. 목록1
-    2. 목록2
-        3. 목록3
-
 + 목록A
     + 목록B
         + 목록C
@@ -207,9 +203,6 @@ ex) [![구글 로고](https://www.google.com/images/branding/googlelogo/2x/googl
         + 목록III
 ```
 
-1. 목록1
-2. 목록2
-    3. 목록3
 
 + 목록A
     + 목록B
