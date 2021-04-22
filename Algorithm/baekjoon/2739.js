@@ -1,5 +1,5 @@
 /**
- * @link https://www.acmicpc.net/problem/
+ * @link https://www.acmicpc.net/problem/2739
  */
 
 const readline = require('readline');
@@ -9,14 +9,17 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-const input = [];
+let input = [];
 
 rl.on('line', (line) => {
     input.push(Number(line));
-    input.push(line);
 })
     .on('close', () => {
-        const [] = input;
+        const [num1] = input;
+
+        for(let i = 1; i < 10; i++ ) {
+            console.log(`${num1} * ${i} = ${num1 * i}`);
+        }
 
         process.exit();
     });

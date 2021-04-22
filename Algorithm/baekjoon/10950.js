@@ -1,5 +1,5 @@
 /**
- * @link https://www.acmicpc.net/problem/
+ * @link https://www.acmicpc.net/problem/10950
  */
 
 const readline = require('readline');
@@ -12,11 +12,15 @@ const rl = readline.createInterface({
 const input = [];
 
 rl.on('line', (line) => {
-    input.push(Number(line));
     input.push(line);
 })
     .on('close', () => {
-        const [] = input;
+        const [strLength, ...strArr] = input;
+
+        for(const strNum of strArr) {
+            const [num1, num2] = strNum.trim().split(' ').map(Number);
+            console.log(`${num1 + num2}`);
+        }
 
         process.exit();
     });

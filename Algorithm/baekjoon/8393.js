@@ -1,5 +1,5 @@
 /**
- * @link https://www.acmicpc.net/problem/
+ * @link https://www.acmicpc.net/problem/8393
  */
 
 const readline = require('readline');
@@ -13,10 +13,17 @@ const input = [];
 
 rl.on('line', (line) => {
     input.push(Number(line));
-    input.push(line);
 })
     .on('close', () => {
-        const [] = input;
+        const [num1] = input;
+
+        let sum = 0;
+
+        for (let i = 1; i <= num1; i++) {
+            sum += i;
+        }
+
+        console.log(sum);
 
         process.exit();
     });

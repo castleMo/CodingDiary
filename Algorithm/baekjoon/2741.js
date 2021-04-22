@@ -1,5 +1,5 @@
 /**
- * @link https://www.acmicpc.net/problem/
+ * @link https://www.acmicpc.net/problem/2741
  */
 
 const readline = require('readline');
@@ -13,10 +13,16 @@ const input = [];
 
 rl.on('line', (line) => {
     input.push(Number(line));
-    input.push(line);
 })
     .on('close', () => {
-        const [] = input;
+        const [num1] = input;
+
+        let result = '';
+        for(let i = 1; i <= num1; i++ ) {
+            result += `${i}\n`
+        }
+
+        console.log(result);
 
         process.exit();
     });
