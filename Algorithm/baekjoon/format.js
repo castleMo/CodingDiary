@@ -1,5 +1,6 @@
 /**
  * @link https://www.acmicpc.net/problem/
+ * @since 2021/
  */
 
 const readline = require('readline');
