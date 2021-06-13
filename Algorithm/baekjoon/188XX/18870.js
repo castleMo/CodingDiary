@@ -3,6 +3,10 @@
  * @since 2021/06/13
  */
 
+/**
+ * 못품...이유모름
+ */
+
  const fs = require('fs');
  const input = fs.readFileSync('/dev/stdin').toString().split('\n');
 //  const input = [5, '2 4 -10 4 -9'];
