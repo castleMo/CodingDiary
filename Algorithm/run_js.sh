@@ -1,0 +1,1 @@
+cat $1/input.txt | node $1/index.js
