@@ -9,13 +9,14 @@
  
  rl.on('line', (line) => {
      input.push(Number(line));
+     input.push(line);
  })
      .on('close', () => {
          const [] = input;
          const result = func();
  
          console.log("\n");
-         console.log(result);
+         console.log({ result });
  
          process.exit();
      });
