@@ -1,0 +1,1 @@
+cat node $1/index.js
