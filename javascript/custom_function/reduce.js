@@ -1,0 +1,4 @@
+
+const customReduce = (callback, initialValue) => {
+
+}
