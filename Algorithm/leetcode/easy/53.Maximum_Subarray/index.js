@@ -32,5 +32,6 @@ const maxSubArray = (nums) => {
         currentSum += nums[i];
         sum = Math.max(sum, currentSum);
     }
+    
     return sum;
 };
