@@ -13,10 +13,11 @@
      .on('close', () => {
          const [arr] = input;
          console.log("\n");
-         for(let i = 0; i < arr.length; i++) {
 
-         }
-         const result = inorderTraversal();
+         const n3 = new TreeNode(3, null, null);
+         const n2 = new TreeNode(2, n3, null);
+         const n1 = new TreeNode(1, null, n2);
+         const result = inorderTraversal(n1);
  
          console.log("\n");
          console.log({ result });
