@@ -21,7 +21,7 @@
          process.exit();
      });
  
-const lengthOfLongestSubstring = (s = '') => {
+const lengthOfLongestSubstring = (s) => {
     if(s.length < 2) {
         return s.length;
     }
@@ -30,22 +30,22 @@ const lengthOfLongestSubstring = (s = '') => {
         return 1;
     }
 
-    let longestStr = '';
-    let currentStr = '';
+    let maxStr = '';
+    let tempStr = '';
 
     for(let i = 0; i < s.length; i++) {
         let char = s[i];
-        let index = currentStr.indexOf(char);
+        let index = tempStr.indexOf(char);
         
         if(index > -1) {
-            if(currentStr.length > longestStr.length) {
-                longestStr = currentStr;
+            if(tempStr.length > maxStr.length) {
+                maxStr = tempStr;
             }
-            currentStr = currentStr.slice(index + 1) + char;
+            tempStr = tempStr.slice(index + 1) + char;
         } else {
-            currentStr += char;
+            tempStr += char;
         }
     }
 
-    return (currentStr.length > longestStr.length ? currentStr : longestStr).length;
+    return (tempStr.length > maxStr.length ? tempStr : maxStr).length;
 };
