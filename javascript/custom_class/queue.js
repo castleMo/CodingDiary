@@ -5,17 +5,9 @@ class Queue {
         this.lastIndex = 0;
     }
 
-    size() {
-        if(this.storage[this.lastIndex] === undefined) {
-            return 0;
-        } else {
-            return this.lastIndex - this.firstIndex + 1;
-        }
-    }
-
     add(value) {
         if(this.size() === 0) {
-            this.storage[this.lastIndex] = value;
+            this.storage['0'] = value;
         } else {
             this.lastIndex++;
             this.storage[this.lastIndex] = value;
@@ -37,5 +29,13 @@ class Queue {
         }
 
         return temp;
+    }
+
+    size() {
+        if(this.storage[this.lastIndex] === undefined) {
+            return 0;
+        } else {
+            return this.lastIndex - this.firstIndex + 1;
+        }
     }
 }
