@@ -7,5 +7,3 @@
 1. 알고리즘
 2. 공부한 것 정리
 3. javascript
-
-test
