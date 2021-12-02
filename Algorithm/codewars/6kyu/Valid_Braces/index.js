@@ -29,13 +29,16 @@ const validBraces = (braces = '') => {
     const stack = [];
 
     for(let i = 0; i < braces.length; i++){
+        
         if (['(','{','['].includes(braces[i])) {
             stack.push(braces[i]);
         } else {
             if(stack.length === 0) {
                 return false;
             }
+
             const lastValue = stack[stack.length-1];
+
             if( 
                 (braces[i] === ']' && lastValue === '[') || 
                 (braces[i] === '}' && lastValue === '{') || 
