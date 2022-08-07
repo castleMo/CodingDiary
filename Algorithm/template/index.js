@@ -17,11 +17,9 @@ rl.on('line', (line) => {
 	input.push(JSON.parse(line));
 }).on('close', () => {
 	const [] = input;
-	console.log('\n');
 	const result = func();
 
-	console.log('\n');
-	console.log({ result });
+	console.log(result);
 
 	process.exit();
 });
