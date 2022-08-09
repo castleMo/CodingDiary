@@ -17,11 +17,11 @@ rl.on('line', (line) => {
 	input.push(JSON.parse(line));
 }).on('close', () => {
 	const [] = input;
-	const result = func();
+	const result = solution();
 
 	console.log(result);
 
 	process.exit();
 });
 
-const func = () => {};
+const solution = () => {};
