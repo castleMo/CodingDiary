@@ -1,6 +1,5 @@
 /**
  * @link
- * @description
  */
 const readline = require('readline');
 
