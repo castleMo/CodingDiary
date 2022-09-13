@@ -1,0 +1,12 @@
+{
+  "name": "coding-diary",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/castlemo/coding-diary.git",
+  "author": "castlemo",
+  "license": "MIT",
+  "scripts": {
+    "algo:run": "bash algorithm/run_js.sh",
+    "cp:algo": "cp -R algorithm/template"
+  }
+}
