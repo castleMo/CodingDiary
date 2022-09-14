@@ -25,4 +25,4 @@ rl.on('line', (line) => {
 	process.exit();
 });
 
-const solution = () => {};
+function solution() {}
