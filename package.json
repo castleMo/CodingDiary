@@ -7,6 +7,6 @@
   "license": "MIT",
   "scripts": {
     "algo:run": "bash algorithm/run_js.sh",
-    "cp:algo": "cp -R algorithm/template"
+    "algo:cp": "cp -R algorithm/template"
   }
 }
