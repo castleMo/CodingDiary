@@ -3,6 +3,8 @@
  */
 const readline = require('readline');
 
+const strToNumberArr = (str) => str.split(' ').map(Number);
+
 const rl = readline.createInterface({
 	input: process.stdin,
 	output: process.stdout,
