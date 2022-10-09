@@ -4,6 +4,11 @@
  */
 const readline = require('readline');
 
+/**
+ *
+ * @param {string} str
+ * @returns {number[]}
+ */
 const strToNumberArr = (str) => str.split(' ').map(Number);
 
 const rl = readline.createInterface({
