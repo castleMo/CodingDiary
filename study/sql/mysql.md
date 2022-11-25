@@ -89,7 +89,7 @@ DELIMITER ;
 
 
 ## 정수 타입
-![mysql-integer-types.png](mysql-integer-types.png)
+![mysql-integer-types.png](images/mysql-integer-types.png)
 
 
 
