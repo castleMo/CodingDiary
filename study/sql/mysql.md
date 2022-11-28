@@ -91,22 +91,41 @@ DELIMITER ;
 ## 정수 타입
 ![mysql-integer-types.png](images/mysql-integer-types.png)
 
+## CAST
+- 데이터 형변환시 사용
+
+```sql
+사용법
+CAST({value} AS {type});
+```
+- type
+  1. BINARY[(N)]
+  2. CHAR[(N)] [charset_info]
+  3. DATE
+  4. DATETIME
+  5. DECIMAL[(M[,D])]
+  6. JSON
+  7. NCHAR[(N)]
+  8. SIGNED [INTEGER]
+  9. TIME
+  10. UNSIGNED [INTEGER]
+  11. 등등...
 
 
 
 
+### 예제
+```sql
+SELECT NOW();
 
+> 2022-11-25 16:16:50
+    
+    
+    
+SELECT CAST(NOW() AS UNSIGNED);
 
-
-
-
-
-
-
-
-
-
-
+> 20221125161629
+```
 
 
 
