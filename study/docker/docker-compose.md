@@ -33,3 +33,6 @@ docker-compose build wordpress // wordpess 컨테이너만 빌드
 docker-compose run [service] [command] // 이미 docker-compose 가동 중인 것과 별개로 하나 더 올릴 때
 docker-compose run nginx bash
 ```
+
+Blog
+https://darrengwon.tistory.com/793
