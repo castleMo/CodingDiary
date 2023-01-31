@@ -127,6 +127,8 @@ SELECT CAST(NOW() AS UNSIGNED);
 > 20221125161629
 ```
 
+## 날짜 함수
+
 
 
 
