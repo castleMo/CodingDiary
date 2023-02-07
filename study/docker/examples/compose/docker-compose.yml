@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  server1:
+    build:
+      context: ./server1
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+    networks:
+      - app-network
+  server2:
+    build:
+      context: ./server2
+      dockerfile: ./Dockerfile
+    ports:
+      - "3001:3001"
+    expose:
+      - "3001"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
