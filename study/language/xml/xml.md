@@ -1,4 +1,4 @@
-# XML (Extensible Markup Language) 이란
+# XML (Extensible Markup Language)
 
 ## XML Schema 란?
 - XML 스키마는 XML 파일의 구조에 대한 몇 가지 규칙이나 제한을 설명하는 문서입니다. 
@@ -74,3 +74,37 @@
 - 인터넷에 있는 자원을 타나내는 유일한 주소를 의미
 - URI의 존재는 인터넷에서 요구되는 기본조건으로서 인터넷 프로토콜에도 항상 명시됨
 > 가장 잘 알려진 URI로는 인터넷 도메인 주소를 나타내는 URL(Uniform Resource Locator)이 있음
+
+
+## XSD (XML Schema Definition) 란?
+- XML 스키마 정의를 의미함
+- XML 문서의 구조 및 해당 문서가 포함할 수 있는 적법한 요소와 속성을 명시
+- XML에서 스키마를 정의할 때는 XSD 뿐만 아니라 DTD 를 사용할 수도 있음
+
+
+### XSD 특징
+1. namespace 를 지원함
+2. XML 문법으로 작성할 수 있어 재사용과 확징이 쉬움
+3. 정수, 문자열 등의 다양한 타입을 지원
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
