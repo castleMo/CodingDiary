@@ -1,4 +1,4 @@
-const { XMLParser, XMLBuilder, XMLValidator} = require("fast-xml-parser");
+const {XMLParser, XMLBuilder, XMLValidator} = require("fast-xml-parser");
 
 const XMLdata = `<?xml version="1.0" encoding="utf-8"?>
 <oadrPayload xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -52,16 +52,85 @@ const parserDefaultOptions = {
 };
 */
 
-const parserOptions = {
+// const parserOptions = {
+// 	ignoreAttributes: false,
+// }
+//
+// const parser = new XMLParser(parserOptions);
+// let jObj = parser.parse(XMLdata);
+// console.log(JSON.stringify(jObj, null, 2));
+//
+// console.log('\n\n\n');
+
+// const builder = new XMLBuilder();
+// const xmlContent = builder.build(jObj);
+// console.log(xmlContent);
+
+/*
+<?xml version="1.0" encoding="utf-8"?>,
+	<oadrPayload
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns="http://openadr.org/oadr-2.0b/2012/07">
+		<oadrSignedObject>
+			<oadrPoll
+				d3p1:schemaVersion="2.0b"
+				xmlns:d3p1="http://docs.oasis-open.org/ns/energyinterop/201110">
+				<d3p1:venID> . $company->company_configs->openadr_ven_id . </d3p1:venID>
+			</oadrPoll>
+		</oadrSignedObject>
+	</oadrPayload>
+ */
+
+const xmlJData = [
+	{
+		'?xml': [
+			{
+				'#text': '',
+			}
+		],
+		':@': {
+			"@_version": '1.0',
+			'@_encoding': 'utf-8'
+		}
+	},
+	{
+		oadrPayload: [
+			{
+				oadrSignedObject: [
+					{
+						oadrPoll: [
+							{
+								'd3p1:venID': [
+									{
+										'#text': 'venId',
+									}
+								]
+							}
+						],
+						':@': {
+							'@_d3p1:schemaVersion': '2.0b',
+							'@_xmlns:d3p1': 'http://docs.oasis-open.org/ns/energyinterop/201110',
+						}
+					}
+				],
+			}
+		],
+		':@': {
+			'@_xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
+			'@_xmlns:xsd': "http://www.w3.org/2001/XMLSchema",
+			'@_xmlns': "http://openadr.org/oadr-2.0b/2012/07"
+		}
+	},
+
+]
+
+const builder = new XMLBuilder({
 	ignoreAttributes: false,
-}
+	preserveOrder: true,
+	suppressBooleanAttributes: true,
+	format: true,
+});
 
-const parser = new XMLParser(parserOptions);
-let jObj = parser.parse(XMLdata);
-console.log(JSON.stringify(jObj, null, 2));
-
-console.log('\n\n\n');
-
-const builder = new XMLBuilder();
-const xmlContent = builder.build(jObj);
-console.log(xmlContent);
+const testPollXML = builder.build(xmlJData);
+console.log(testPollXML);
