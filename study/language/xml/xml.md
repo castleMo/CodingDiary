@@ -1,5 +1,23 @@
 # XML (Extensible Markup Language)
 
+## XML 구성
+- root
+- element
+- attribute
+- text
+
+### 예제
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<rootElement>
+  <element attribute="attribute">text</element>
+  <parent>
+    <child>child</child>
+  </parent>
+</rootElement>
+```
+
+
 ## XML Schema 란?
 - XML 스키마는 XML 파일의 구조에 대한 몇 가지 규칙이나 제한을 설명하는 문서입니다. 
 - 다음과 같은 여러 가지 방법으로 이러한 제약 조건을 설명할 수 있습니다.
