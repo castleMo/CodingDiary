@@ -6,7 +6,7 @@
   "author": "castlemo",
   "license": "MIT",
   "scripts": {
-    "algo:run": "bash algorithm/run_js.sh",
-    "algo:cp": "cp -R algorithm/template"
+    "algo:run": "bash practice/algorithm/run_js.sh",
+    "algo:cp": "cp -R practice/algorithm/template"
   }
 }
